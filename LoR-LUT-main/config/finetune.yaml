@@ -1,0 +1,40 @@
+
+seed: 1337
+
+data:
+  root: ""         # 设置到 /dataset_root
+  train_sub: "train"
+  val_sub: "val"
+  in_dir: "input"
+  gt_dir: "gt"
+  ext: [".jpg", ".jpeg", ".png", ".tif", ".tiff"]
+
+model:
+  G: 33
+  K: 8
+  R: 4
+
+train:
+  iters: 10000 #20000
+  batch: 2
+  patch: 512
+  log_every: 100
+  val_every: 4000
+  amp: true
+
+loss:
+  l1: 0.8
+  de2000: 0.05
+  tv: 0.001
+  mono: 2.0
+  dl2: 0.0005
+  lpips: 0.0
+  alpha_l2: 0.0001
+
+optim:
+  lr: 0.00003 #0.0001
+  weight_decay: 0.0001
+
+sched:
+  cosine: true
+  min_lr: 0.00001

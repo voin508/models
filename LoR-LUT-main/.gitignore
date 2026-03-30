@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Model checkpoints
+*.ckpt
+saved_model/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+venv/
+env/
+ENV/
+
+# Data
+data/raw/
+data/processed/
+*.zip
+*.tar.gz
+
+models/
+runs/
+test/
+test1/
+saved_model/
+visualization/
+venv/
+data_full/
+test_new.py
+train_finetune.py

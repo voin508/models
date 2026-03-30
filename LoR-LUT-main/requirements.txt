@@ -1,0 +1,24 @@
+# PyTorch (install separately or use Colab's pre-installed version)
+# For local: pip install torch torchvision torchaudio
+# For Colab: Already installed
+
+# Core dependencies
+numpy>=1.21.0
+Pillow>=9.0.0
+opencv-python>=4.5.0
+PyYAML>=6.0
+scikit-image>=0.19.0
+tqdm>=4.62.0
+
+# Perceptual loss
+lpips>=0.1.4
+
+# Viewer app (optional)
+streamlit>=1.20.0
+plotly>=5.10.0
+
+# Color science (for deltaE2000)
+# Already in scikit-image
+
+# Export tools
+# Standard library only
